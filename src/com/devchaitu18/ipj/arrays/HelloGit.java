@@ -10,6 +10,7 @@ public class HelloGit {
 		System.out.println("comitting from eclipse");
 		System.out.println("comitting from eclipse2");
 		System.out.println("comitting from eclipse4");
+		System.out.println("Pushing upstream");
 
 	}
 
