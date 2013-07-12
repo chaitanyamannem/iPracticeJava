@@ -1,5 +1,8 @@
 package com.devchaitu18.ipj.arrays.bsamples;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.devchaitu18.ipj.arrays.models.Apple;
 
 /**
@@ -10,6 +13,9 @@ import com.devchaitu18.ipj.arrays.models.Apple;
  * 
  */
 public class DeclaringNCreatingAnArray {
+
+	private static final Logger logger = Logger
+			.getLogger(DeclaringNCreatingAnArray.class.getName());
 
 	/**
 	 * The supressWarnings("unused") is used for better readbility.
@@ -35,8 +41,8 @@ public class DeclaringNCreatingAnArray {
 		 */
 
 		/*
-		 * Type 1 -- This tells that simlaApples are of type Apple. Here both
-		 * simlaApples and washingtonApples are arrays.
+		 * Type 1 -- This tells that simlaApples and washingtonApples are of
+		 * type Apple. Here both simlaApples and washingtonApples are arrays.
 		 */
 		Apple[] simlaApples, washingtonApples;
 
@@ -52,6 +58,36 @@ public class DeclaringNCreatingAnArray {
 		 */
 		Apple californiaApples[], amalapuramApple;
 
+		/*-----------Creating an array------------------*/
+		/*
+		 * Step 1 - use new operator step 2 - specify the length.
+		 */
+
+		// creating a primitive type array
+		intArray = new int[10];
+
+		// kashmirApples = new kashmirApples()[10];
+
+		/*-----Note: Arrays of size zero are valid------*/
+		doubleArray = new double[0];
+		logger.log(Level.INFO,
+				"doubleArray reference: " + doubleArray.hashCode());
+		logger.log(Level.INFO, "Length of doubleArray: " + doubleArray.length);
+
 	}
 
+	/**
+	 * Using a method to create a primitive type array
+	 * 
+	 * @param size
+	 *            - Number of elements in the array
+	 * @return
+	 */
+	public static double[] createDoubleArrayOfSize(int size) {
+		/*
+		 * This demonstrates that the length can also be specified as an
+		 * expression
+		 */
+		return new double[(size - 1 + 1)];
+	}
 }
