@@ -1,0 +1,13 @@
+package com.devchaitu18.ipj.arrays;
+
+public class HelloGit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("HelloGit");
+
+	}
+
+}
