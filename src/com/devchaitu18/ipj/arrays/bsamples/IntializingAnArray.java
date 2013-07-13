@@ -11,6 +11,7 @@ public class IntializingAnArray {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		/*
 		 * When you declare an array you can specify the initial values of the

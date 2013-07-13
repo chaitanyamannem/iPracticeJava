@@ -60,13 +60,14 @@ public class DeclaringNCreatingAnArray {
 
 		/*-----------Creating an array------------------*/
 		/*
-		 * Step 1 - use new operator step 2 - specify the length.
+		 * Step 1 - use new operator  Step 2 - specify the type name  step 3 - specify the length.
 		 */
 
 		// creating a primitive type array
 		intArray = new int[10];
 
-		// kashmirApples = new kashmirApples()[10];
+		// creating a reference type array
+		kashmirApples = new Apple[10];
 
 		/*-----Note: Arrays of size zero are valid------*/
 		doubleArray = new double[0];
