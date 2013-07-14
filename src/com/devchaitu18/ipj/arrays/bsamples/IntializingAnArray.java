@@ -1,5 +1,7 @@
 package com.devchaitu18.ipj.arrays.bsamples;
 
+import com.devchaitu18.ipj.arrays.models.Apple;
+
 /**
  * This is a basic sample class that demonstrates the intialization of an array.
  * 
@@ -26,8 +28,9 @@ public class IntializingAnArray {
 		//This is also valid. The extra comma here is for the benefit of code genrators.
 		double doubleArray[] = {0.1,0.2,0.3,};
 
-		// TODO Intialzing a reference type array
+		// Intialzing a reference type array
+		Apple[] italianApples = {new Apple(),new Apple(), new Apple()};
+		
 
 	}
-
 }

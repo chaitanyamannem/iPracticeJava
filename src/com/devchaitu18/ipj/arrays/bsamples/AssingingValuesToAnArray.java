@@ -20,8 +20,6 @@ public class AssingingValuesToAnArray {
 		int[] intArray = new int[2];
 		intArray[0] = 100;
 		intArray[1] = 99;
-		
-		
 
 	}
 

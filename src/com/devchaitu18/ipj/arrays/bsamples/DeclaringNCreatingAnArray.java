@@ -61,6 +61,7 @@ public class DeclaringNCreatingAnArray {
 		/*-----------Creating an array------------------*/
 		/*
 		 * Step 1 - use new operator  Step 2 - specify the type name  step 3 - specify the length.
+		 * Note: Java automatically initializes all of the values in an array when it is created.
 		 */
 
 		// creating a primitive type array
@@ -74,6 +75,14 @@ public class DeclaringNCreatingAnArray {
 		logger.log(Level.INFO,
 				"doubleArray reference: " + doubleArray.hashCode());
 		logger.log(Level.INFO, "Length of doubleArray: " + doubleArray.length);
+		
+		/*----An array can be reinstantiated or recreated with new operator--------*/
+		//Address of intArray before recreation
+		logger.log(Level.INFO,"Address of intArray before recreation: " + intArray);
+		intArray = new int[20];
+		logger.log(Level.INFO,"Address of intArray after recreation: " + intArray);
+		/*--Note: But you cannot change its type once declared.--*/
+		//intArray = new String[6]; This is not possible
 
 	}
 

@@ -65,6 +65,7 @@ public class WhyArraysUseCase {
 			if(currentTerm > limit){
 				break;
 			}
+			//Note: the index of an array can be an expression
 			fibonacciSequence[i] = currentTerm;
 			/*
 			 * The new previous term is difference of new current term and
